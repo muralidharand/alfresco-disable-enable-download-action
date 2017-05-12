@@ -1,0 +1,41 @@
+<alfresco-config>
+	<!-- Customise certain Document Library actions -->
+	<config evaluator="string-compare" condition="DocLibActions">
+		<actions>
+			<action id="disable-download" type="javascript" label="Enable download">
+				<param name="function">onDisableDownload</param>
+				<evaluator negate="true">evaluator.doclib.isDisableDownloadEvaluator</evaluator>
+				<evaluator>evaluator.doclib.action.isDocumentCreator</evaluator>
+			</action>
+			<action id="enable-download" type="javascript" label="Disable download">
+				<param name="function">onEnableDownload</param>
+				<evaluator>evaluator.doclib.isDisableDownloadEvaluator</evaluator>
+				<evaluator>evaluator.doclib.action.isDocumentCreator</evaluator>
+			</action>
+			<!-- OVERRIDE ACTION Download document -->
+			<action id="document-download" type="link" label="actions.document.download">
+				<param name="href">{downloadUrl}</param>
+				<param name="target">_blank</param>
+				<evaluator>evaluator.doclib.action.downloadBrowser</evaluator>
+				<evaluator>evaluator.doclib.action.hasContent</evaluator>
+				<evaluator>evaluator.doclib.isDisableDownloadEvaluator</evaluator>
+			</action>
+		</actions>
+		<actionGroups>
+			<actionGroup id="document-browse">
+				<action index="101" id="disable-download" />
+				<action index="102" id="enable-download" />
+			</actionGroup>
+			<actionGroup id="document-details">
+				<action index="101" id="disable-download" />
+				<action index="102" id="enable-download" />
+			</actionGroup>
+		</actionGroups>
+	</config>
+	<config evaluator="string-compare" condition="DocLibCustom">
+		<dependencies>
+			<js src="my-custom-action.js" />
+		</dependencies>
+	</config>
+</alfresco-config>
+
