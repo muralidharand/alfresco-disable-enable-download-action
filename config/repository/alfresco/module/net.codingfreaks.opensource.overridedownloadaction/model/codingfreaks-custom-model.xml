@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model name="codingFreaks:customModel"
+<model name="cf:customModel"
 	xmlns="http://www.alfresco.org/model/dictionary/1.0">
 	<description>CodingFreaks OpenSource Custom Model</description>
 	<author>Muralidharan Deenathayalan</author>
@@ -11,7 +11,7 @@
 		<import uri="http://www.alfresco.org/model/site/1.0" prefix="st" />
 	</imports>
 	<namespaces>
-		<namespace uri="codingFreaks.model" prefix="cf"/>
+		<namespace uri="cf.model" prefix="cf"/>
 	</namespaces>
 	<aspects>
 		<aspect name="cf:disableDownloadAspect">

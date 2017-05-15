@@ -53,7 +53,7 @@
 
    <target name="package-amps" depends="init,package-jar">
        <zip destfile="${amp.repo.file}" >
-          <fileset dir="${project.dir}/build" includes="lib/*.jar" />
+          
           <fileset dir="${project.dir}/config/repository/alfresco/module/net.codingfreaks.opensource.overridedownloadaction" 
                    includes="module.properties" />
           <zipfileset dir="${project.dir}/config/repository" 
@@ -62,6 +62,7 @@
        </zip>
 
        <zip destfile="${amp.share.file}" >
+          <fileset dir="${project.dir}/build" includes="lib/*.jar" />
           <fileset dir="${project.dir}/config/share/alfresco/module/net.codingfreaks.opensource.overridedownloadaction" 
                    includes="module.properties" />
           <zipfileset dir="${project.dir}/config/share" 

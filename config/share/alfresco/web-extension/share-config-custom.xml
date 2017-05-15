@@ -34,7 +34,7 @@
 	</config>
 	<config evaluator="string-compare" condition="DocLibCustom">
 		<dependencies>
-			<js src="my-custom-action.js" />
+			<js src="components/disable-enable-download-action/disable-enable-download-action.js" />
 		</dependencies>
 	</config>
 </alfresco-config>
