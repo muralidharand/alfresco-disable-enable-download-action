@@ -1,0 +1,161 @@
+Buildfile: C:\Development\Github\disable-enable-download-action\build.xml
+
+clean:
+   [delete] Deleting directory C:\Development\Github\disable-enable-download-action\build
+
+init:
+    [mkdir] Created dir: C:\Development\Github\disable-enable-download-action\build
+    [mkdir] Created dir: C:\Development\Github\disable-enable-download-action\build\lib
+    [mkdir] Created dir: C:\Development\Github\disable-enable-download-action\build\classes
+    [mkdir] Created dir: C:\Development\Github\disable-enable-download-action\build\test-classes
+    [mkdir] Created dir: C:\Development\Github\disable-enable-download-action\build\dist
+
+compile:
+    [javac] C:\Development\Github\disable-enable-download-action\build.xml:40: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to C:\Development\Github\disable-enable-download-action\build\classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:3: error: package org.alfresco.error does not exist
+    [javac] import org.alfresco.error.AlfrescoRuntimeException;
+    [javac]                          ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:4: error: package org.alfresco.web.evaluator does not exist
+    [javac] import org.alfresco.web.evaluator.BaseEvaluator;
+    [javac]                                  ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:5: error: package org.apache.commons.logging does not exist
+    [javac] import org.apache.commons.logging.Log;
+    [javac]                                  ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:6: error: package org.apache.commons.logging does not exist
+    [javac] import org.apache.commons.logging.LogFactory;
+    [javac]                                  ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:7: error: package org.json.simple does not exist
+    [javac] import org.json.simple.JSONObject;
+    [javac]                       ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:8: error: package org.json.simple.parser does not exist
+    [javac] import org.json.simple.parser.JSONParser;
+    [javac]                              ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:9: error: package org.springframework.extensions.surf does not exist
+    [javac] import org.springframework.extensions.surf.RequestContext;
+    [javac]                                           ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:10: error: package org.springframework.extensions.surf does not exist
+    [javac] import org.springframework.extensions.surf.ServletUtil;
+    [javac]                                           ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:11: error: package org.springframework.extensions.surf.support does not exist
+    [javac] import org.springframework.extensions.surf.support.ThreadLocalRequestContext;
+    [javac]                                                   ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:12: error: package org.springframework.extensions.webscripts does not exist
+    [javac] import org.springframework.extensions.webscripts.Status;
+    [javac]                                                 ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:13: error: package org.springframework.extensions.webscripts.connector does not exist
+    [javac] import org.springframework.extensions.webscripts.connector.Connector;
+    [javac]                                                           ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:14: error: package org.springframework.extensions.webscripts.connector does not exist
+    [javac] import org.springframework.extensions.webscripts.connector.Response;
+    [javac]                                                           ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:16: error: cannot find symbol
+    [javac] public class DownloadActionEvaluator extends BaseEvaluator
+    [javac]                                              ^
+    [javac]   symbol: class BaseEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:19: error: cannot find symbol
+    [javac]    private static final Log logger = LogFactory.getLog(DownloadActionEvaluator.class);
+    [javac]                         ^
+    [javac]   symbol:   class Log
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:24: error: cannot find symbol
+    [javac]    public boolean evaluate(JSONObject jsonObject) {
+    [javac]                            ^
+    [javac]   symbol:   class JSONObject
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:77: error: cannot find symbol
+    [javac]    private String getUserRole(JSONObject jsonObject)
+    [javac]                               ^
+    [javac]   symbol:   class JSONObject
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:19: error: cannot find symbol
+    [javac]    private static final Log logger = LogFactory.getLog(DownloadActionEvaluator.class);
+    [javac]                                      ^
+    [javac]   symbol:   variable LogFactory
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:23: error: method does not override or implement a method from a supertype
+    [javac]    @Override
+    [javac]    ^
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:27: error: cannot find symbol
+    [javac]          String username = getUserId();
+    [javac]                            ^
+    [javac]   symbol:   method getUserId()
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:28: error: cannot find symbol
+    [javac]          JSONObject modifier =(JSONObject) getProperty(jsonObject,"cm:modifier");
+    [javac]          ^
+    [javac]   symbol:   class JSONObject
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:28: error: cannot find symbol
+    [javac]          JSONObject modifier =(JSONObject) getProperty(jsonObject,"cm:modifier");
+    [javac]                                ^
+    [javac]   symbol:   class JSONObject
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:46: error: cannot find symbol
+    [javac]          RequestContext rc = ThreadLocalRequestContext.getRequestContext();
+    [javac]          ^
+    [javac]   symbol:   class RequestContext
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:46: error: cannot find symbol
+    [javac]          RequestContext rc = ThreadLocalRequestContext.getRequestContext();
+    [javac]                              ^
+    [javac]   symbol:   variable ThreadLocalRequestContext
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:47: error: cannot find symbol
+    [javac]          Connector conn = rc.getServiceRegistry().getConnectorService().getConnector(
+    [javac]          ^
+    [javac]   symbol:   class Connector
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:48: error: cannot find symbol
+    [javac]                "alfresco", username, ServletUtil.getSession());
+    [javac]                                      ^
+    [javac]   symbol:   variable ServletUtil
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:49: error: cannot find symbol
+    [javac]          Response response = conn.call("/api/sites/"+siteName+"/memberships/"+username);
+    [javac]          ^
+    [javac]   symbol:   class Response
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:51: error: cannot find symbol
+    [javac]          if (response.getStatus().getCode() == Status.STATUS_OK)
+    [javac]                                                ^
+    [javac]   symbol:   variable Status
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:54: error: cannot find symbol
+    [javac]             JSONObject responsetext = (JSONObject)new JSONParser().parse(response.getResponse());
+    [javac]             ^
+    [javac]   symbol:   class JSONObject
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:54: error: cannot find symbol
+    [javac]             JSONObject responsetext = (JSONObject)new JSONParser().parse(response.getResponse());
+    [javac]                                        ^
+    [javac]   symbol:   class JSONObject
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:54: error: cannot find symbol
+    [javac]             JSONObject responsetext = (JSONObject)new JSONParser().parse(response.getResponse());
+    [javac]                                                       ^
+    [javac]   symbol:   class JSONParser
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:59: error: cannot find symbol
+    [javac]          else if (response.getStatus().getCode() == Status.STATUS_NOT_FOUND)
+    [javac]                                                     ^
+    [javac]   symbol:   variable Status
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:73: error: cannot find symbol
+    [javac]          throw new AlfrescoRuntimeException("Failed to run UI evaluator: " + err.getMessage());
+    [javac]                    ^
+    [javac]   symbol:   class AlfrescoRuntimeException
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:87: error: cannot find symbol
+    [javac]              throw new AlfrescoRuntimeException("Unable to get the user role");
+    [javac]                        ^
+    [javac]   symbol:   class AlfrescoRuntimeException
+    [javac]   location: class DownloadActionEvaluator
+    [javac] C:\Development\Github\disable-enable-download-action\src\main\java\net\codingfreaks\opensource\web\evaluator\doclib\action\DownloadActionEvaluator.java:92: error: cannot find symbol
+    [javac]            throw new AlfrescoRuntimeException("Exception whilst querying siteId from location: " + err.getMessage());
+    [javac]                      ^
+    [javac]   symbol:   class AlfrescoRuntimeException
+    [javac]   location: class DownloadActionEvaluator
+    [javac] 34 errors
+    [javac] 1 warning

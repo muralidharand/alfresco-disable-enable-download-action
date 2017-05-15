@@ -13,7 +13,7 @@
                 method: "POST",
                 dataObj:
                 {
-                 added: ["quanticate:disableDownloadAspect"]
+                 added: ["cf:disableDownloadAspect"]
                 },
                 successCallback: 
                 {
@@ -49,7 +49,7 @@
                 method: "POST",
                 dataObj:
                 {
-                 removed: ["quanticate:disableDownloadAspect"]
+                 removed: ["cf:disableDownloadAspect"]
                 },
                 successCallback: 
                 {
