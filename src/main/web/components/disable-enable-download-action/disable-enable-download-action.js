@@ -21,7 +21,7 @@
                     {
                         Alfresco.util.PopupManager.displayMessage(
                         {
-                           text: "Download action enabled successfully"
+                           text: "Download action disabled successfully"
                         });
                         window.location.reload();
                     }
@@ -57,7 +57,7 @@
                     {
                         Alfresco.util.PopupManager.displayMessage(
                         {
-                           text: "Download action disabled successfully"
+                           text: "Download action enabled successfully"
                         });
                         window.location.reload();
                     }

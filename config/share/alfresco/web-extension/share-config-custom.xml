@@ -2,12 +2,12 @@
 	<!-- Customise certain Document Library actions -->
 	<config evaluator="string-compare" condition="DocLibActions">
 		<actions>
-			<action id="disable-download" type="javascript" label="Enable download">
+			<action id="disable-download" type="javascript" label="Disable download">
 				<param name="function">onDisableDownload</param>
 				<evaluator negate="true">evaluator.doclib.isDisableDownloadEvaluator</evaluator>
 				<evaluator>evaluator.doclib.action.isDocumentCreator</evaluator>
 			</action>
-			<action id="enable-download" type="javascript" label="Disable download">
+			<action id="enable-download" type="javascript" label="Enable download">
 				<param name="function">onEnableDownload</param>
 				<evaluator>evaluator.doclib.isDisableDownloadEvaluator</evaluator>
 				<evaluator>evaluator.doclib.action.isDocumentCreator</evaluator>
@@ -18,7 +18,7 @@
 				<param name="target">_blank</param>
 				<evaluator>evaluator.doclib.action.downloadBrowser</evaluator>
 				<evaluator>evaluator.doclib.action.hasContent</evaluator>
-				<evaluator>evaluator.doclib.isDisableDownloadEvaluator</evaluator>
+				<evaluator negate="true">evaluator.doclib.isDisableDownloadEvaluator</evaluator>
 			</action>
 		</actions>
 		<actionGroups>
@@ -37,5 +37,47 @@
 			<js src="components/disable-enable-download-action/disable-enable-download-action.js" />
 		</dependencies>
 	</config>
-</alfresco-config>
+	<!--
+	<config evaluator="string-compare" condition="Remote">
+      <remote>
+         <endpoint>
+            <id>alfresco-noauth</id>
+            <name>Alfresco - unauthenticated access</name>
+            <description>Access to Alfresco Repository WebScripts that do not require authentication</description>
+            <connector-id>alfresco</connector-id>
+            <endpoint-url>http://localhost:80/alfresco/s</endpoint-url>
+            <identity>none</identity>
+         </endpoint>
 
+         <endpoint>
+            <id>alfresco</id>
+            <name>Alfresco - user access</name>
+            <description>Access to Alfresco Repository WebScripts that require user authentication</description>
+            <connector-id>alfresco</connector-id>
+            <endpoint-url>http://localhost:80/alfresco/s</endpoint-url>
+            <identity>user</identity>
+         </endpoint>
+
+         <endpoint>
+            <id>alfresco-feed</id>
+            <name>Alfresco Feed</name>
+            <description>Alfresco Feed - supports basic HTTP authentication via the EndPointProxyServlet</description>
+            <connector-id>http</connector-id>
+            <endpoint-url>http://localhost:80/alfresco/s</endpoint-url>
+            <basic-auth>true</basic-auth>
+            <identity>user</identity>
+         </endpoint>
+         
+         <endpoint>
+            <id>alfresco-api</id>
+            <parent-id>alfresco</parent-id>
+            <name>Alfresco Public API - user access</name>
+            <description>Access to Alfresco Repository Public API that require user authentication.
+                         This makes use of the authentication that is provided by parent 'alfresco' endpoint.</description>
+            <connector-id>alfresco</connector-id>
+            <endpoint-url>http://localhost:80/alfresco/api</endpoint-url>
+            <identity>user</identity>
+         </endpoint>
+      </remote>
+   </config>-->
+</alfresco-config>
